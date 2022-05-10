@@ -1,6 +1,6 @@
-runner {
-  profile = "secondary-cluster-odr"
-}      
+# runner {
+#   profile = "secondary-cluster-odr"
+# }      
 # 
 
 variable "registry_username" {
