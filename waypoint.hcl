@@ -1,5 +1,6 @@
-#
-#
+runner {
+  profile = "secondary-cluster-odr"
+}   
 
 variable "registry_username" {
   type = string
@@ -22,10 +23,7 @@ variable "registry_imagename" {
 
 project = "nodejs-example"
 
-app "nodejs-example" {
-  runner {
-    profile = "secondary-cluster-odr"
-  }      
+app "nodejs-example" {   
   labels = {
     "service" = "example-nodejs",
     "env"     = "dev"
