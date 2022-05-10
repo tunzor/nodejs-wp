@@ -20,9 +20,9 @@ variable "registry_imagename" {
 project = "nodejs-example"
 
 app "nodejs-example" {   
-  runner {
-    profile = "secondary-cluster-odr"
-  }   
+#   runner {
+#     profile = "secondary-cluster-odr"
+#   }   
   labels = {
     "service" = "example-nodejs",
     "env"     = "dev"
